@@ -16,7 +16,7 @@ import pickle
 # In[2]:
 
 
-data = pd.read_csv("C:/Users/Reshma/Downloads/BODY_FITNESS_DATASET.csv")
+data = pd.read_csv("C:/Users/Home/Downloads/BODY_FITNESS_DATASET.csv")
 data
 
 
