@@ -1,0 +1,40 @@
+<html>
+    <head><title>ML API</title></head>
+ <body bgcolor="pink">
+   <div class="login">
+     <u><h1>Body Fitness Prediction </h1></u>
+      <form action="{{ url_for('predict')}}"method="post">
+       <em>eg: if your mood is happy then put 1 on the happy column then neutral and sad columns must be 0. you can choose as your mood.</em><br><br> 
+        <b> Sad:</b>
+         <select name="Sad" size=1>
+               <option value="0" selected> 0
+               <option value="1">1
+         </select>
+        <b> Neutral:</b>
+         <select name="Neutral" size="1">
+               <option value="0" selected> 0
+               <option value="1"> 1
+         </select>
+        <b> Happy:</b>
+         <select name="Happy" size="1">
+               <option value="0" selected> 0
+               <option value="1"> 1
+         </select>
+       <b> <p> Calories burned:</b>
+         <input type="text" name="Calories" size="30" maxlength="20"></p>
+        <b> <p>Hours of sleep:</b>
+         <input type="text" name="hours of sleep" size="30" maxlength="20"></p><br>
+            
+            <input type="reset" value="clear">
+            
+        <input type="submit" value="Predict">
+            
+       </form>
+       
+     <br>
+     <br>
+     {{ prediction_text }}	
+     
+   </div>
+  </body>
+</html>
